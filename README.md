@@ -19,7 +19,13 @@ These are a bunch of scripts to add data to a running ES stack to test custom ro
 
 * Check out my branch in the Kibana repo, then from inside that directory:
   - Use yarn to run ES with correct flags (serverless)
+  ```shell
+  $ yarn es serverless --projectType=oblt -E xpack.security.authc.native_roles.enabled=true
+  ```
   - Use yarn to run Kibana with correct flags
+  ```shell
+  $ yarn start --serverless=oblt --xpack.security.roleManagementEnabled=true --xpack.cloud.users_and_roles_url="https://test_users_and_roles_url"
+  ```
 * Log into running Kibana UI (choose "admin" as your user if running in serverless mode)
   - Go to Project settings > Management > API Keys and make a new API key with default settings, no changes needed, copy that API key value (Base64 encoded already) into the .env file you copied above, as the ES_API_KEY value
   - Navigate to the observability app pages and you should see all of the "Add data" screens
