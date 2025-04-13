@@ -101,7 +101,7 @@ const RULES: RuleConfig[] = [
       "interval": "1m"
     },
     "consumer": "infrastructure",
-    "name": "Custom threshold rule (role visibility: logs)",
+    "name": "Custom threshold rule (role visibility: metrics)",
     "rule_type_id": "observability.rules.custom_threshold",
     "actions": [],
     "alert_delay": {
@@ -206,7 +206,7 @@ const RULES: RuleConfig[] = [
       "interval": "1m"
     },
     "consumer": "alerts",
-    "name": "Latency threshold",
+    "name": "APM: Latency threshold",
     "rule_type_id": "apm.transaction_duration",
     "actions": [],
     "alert_delay": {
@@ -226,7 +226,7 @@ const RULES: RuleConfig[] = [
       "interval": "1m"
     },
     "consumer": "alerts",
-    "name": "Failed transaction rate threshold",
+    "name": "APM: Failed transaction rate threshold",
     "rule_type_id": "apm.transaction_error_rate",
     "actions": [],
     "alert_delay": {
@@ -247,7 +247,7 @@ const RULES: RuleConfig[] = [
       "interval": "1m"
     },
     "consumer": "alerts",
-    "name": "Error count threshold",
+    "name": "APM: Error count threshold",
     "rule_type_id": "apm.error_rate",
     "actions": [],
     "alert_delay": {

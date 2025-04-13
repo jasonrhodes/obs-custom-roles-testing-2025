@@ -4,12 +4,12 @@ import kbnClient from './kbn_client';
 
 interface CreateRuleResponse {
   rule: RuleConfig;
-  response: AxiosResponse;
+  response: Pick<AxiosResponse, "data" | "status">;
 }
 
 interface CreateRuleErrorResponse {
   rule: RuleConfig;
-  error: AxiosError;
+  error: Pick<AxiosError["response"], "data" | "status">;
 }
 
 
@@ -40,10 +40,12 @@ export async function createRules() {
       if (response.status >= 400) {
         throw new AxiosError(`Custom-made axios error while creating ${rule.name}`, String(response.status));
       }
-      results.push({ rule, response });
+      const { data, status } = response;
+      results.push({ rule, response: { data, status } });
     } catch (error: unknown) {
       if (isAxiosError(error)) {
-        errors.push({ rule, error });
+        const { data, status } = error.response;
+        errors.push({ rule, error: { data, status } });
       }
       throw error;
     }
