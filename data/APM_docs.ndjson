@@ -1,0 +1,534 @@
+// APM Latency Docs ?
+{
+  "_index": ".ds-metrics-apm.transaction.1m-default-2025.04.08-000011",
+  "_id": "wK9wK5YBwwLoYtnV5BSg",
+  "_version": 1,
+  "_source": {
+    "@timestamp": "2025-04-12T19:18:00.000Z",
+    "_doc_count": 50,
+    "agent": {
+      "name": "go"
+    },
+    "cloud": {
+      "availability_zone": "us-central1-c",
+      "project": {
+        "id": "elastic-observability"
+      },
+      "provider": "gcp",
+      "region": "us-central1"
+    },
+    "data_stream": {
+      "dataset": "apm.transaction.1m",
+      "namespace": "default",
+      "type": "metrics"
+    },
+    "event": {
+      "outcome": "success",
+      "success_count": {
+        "sum": 50,
+        "value_count": 50
+      }
+    },
+    "host": {
+      "hostname": "auditbeat-mstlc",
+      "name": "auditbeat-mstlc",
+      "os": {
+        "platform": "linux"
+      }
+    },
+    "metricset": {
+      "interval": "1m",
+      "name": "transaction"
+    },
+    "observer": {
+      "hostname": "3593523ce374",
+      "type": "apm-server",
+      "version": "9.1.0"
+    },
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "go",
+        "version": "go1.24.1"
+      },
+      "name": "auditbeat",
+      "node": {
+        "name": "auditbeat-mstlc"
+      },
+      "runtime": {
+        "name": "gc",
+        "version": "go1.24.1"
+      },
+      "version": "9.1.0"
+    },
+    "transaction": {
+      "duration": {
+        "histogram": {
+          "values": [
+            51199,
+            52223,
+            52479,
+            52735,
+            52991,
+            53247,
+            53503,
+            53759,
+            54015,
+            54271,
+            54527,
+            54783,
+            55295,
+            55551,
+            56575,
+            57343,
+            58111,
+            59647,
+            59903,
+            60415,
+            70655,
+            74239,
+            82943,
+            89599,
+            92159,
+            94719,
+            96767,
+            98303,
+            99327,
+            104447,
+            129535,
+            149503,
+            151551,
+            152575,
+            155647,
+            156671,
+            157695,
+            160767,
+            177151,
+            276479
+          ],
+          "counts": [
+            1,
+            3,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "summary": {
+          "sum": 4305614,
+          "value_count": 50
+        }
+      },
+      "name": "publish",
+      "root": true,
+      "type": "output"
+    }
+  },
+  "fields": {
+    "transaction.name.text": [
+      "publish"
+    ],
+    "transaction.duration.summary": [
+      {
+        "sum": 4305614,
+        "value_count": 50
+      }
+    ],
+    "host.name.text": [
+      "auditbeat-mstlc"
+    ],
+    "service.node.name": [
+      "auditbeat-mstlc"
+    ],
+    "host.hostname": [
+      "auditbeat-mstlc"
+    ],
+    "service.language.name": [
+      "go"
+    ],
+    "cloud.availability_zone": [
+      "us-central1-c"
+    ],
+    "service.node.name.text": [
+      "auditbeat-mstlc"
+    ],
+    "agent.name.text": [
+      "go"
+    ],
+    "event.success_count": [
+      {
+        "sum": 50,
+        "value_count": 50
+      }
+    ],
+    "transaction.root": [
+      true
+    ],
+    "processor.event": [
+      "metric"
+    ],
+    "agent.name": [
+      "go"
+    ],
+    "host.name": [
+      "auditbeat-mstlc"
+    ],
+    "event.outcome": [
+      "success"
+    ],
+    "service.environment": [
+      "production"
+    ],
+    "_doc_count": [
+      50
+    ],
+    "cloud.region": [
+      "us-central1"
+    ],
+    "service.name": [
+      "auditbeat"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "service.language.name.text": [
+      "go"
+    ],
+    "service.runtime.name": [
+      "gc"
+    ],
+    "service.runtime.name.text": [
+      "gc"
+    ],
+    "service.runtime.version": [
+      "go1.24.1"
+    ],
+    "metricset.interval": [
+      "1m"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "observer.hostname": [
+      "3593523ce374"
+    ],
+    "transaction.duration.histogram": [
+      {
+        "values": [
+          51199,
+          52223,
+          52479,
+          52735,
+          52991,
+          53247,
+          53503,
+          53759,
+          54015,
+          54271,
+          54527,
+          54783,
+          55295,
+          55551,
+          56575,
+          57343,
+          58111,
+          59647,
+          59903,
+          60415,
+          70655,
+          74239,
+          82943,
+          89599,
+          92159,
+          94719,
+          96767,
+          98303,
+          99327,
+          104447,
+          129535,
+          149503,
+          151551,
+          152575,
+          155647,
+          156671,
+          157695,
+          160767,
+          177151,
+          276479
+        ],
+        "counts": [
+          1,
+          3,
+          2,
+          3,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "transaction.type": [
+      "output"
+    ],
+    "metricset.name": [
+      "transaction"
+    ],
+    "cloud.provider": [
+      "gcp"
+    ],
+    "@timestamp": [
+      "2025-04-12T19:18:00.000Z"
+    ],
+    "service.version": [
+      "9.1.0"
+    ],
+    "host.os.platform": [
+      "linux"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "observer.version": [
+      "9.1.0"
+    ],
+    "service.name.text": [
+      "auditbeat"
+    ],
+    "data_stream.dataset": [
+      "apm.transaction.1m"
+    ],
+    "service.language.version": [
+      "go1.24.1"
+    ],
+    "transaction.name": [
+      "publish"
+    ],
+    "cloud.project.id": [
+      "elastic-observability"
+    ]
+  }
+}
+{
+  "_index": ".ds-metrics-apm.transaction.1m-default-2025.04.08-000011",
+  "_id": "CBJvK5YBW7RLzy5lDxDV",
+  "_version": 1,
+  "_source": {
+    "@timestamp": "2025-04-12T19:16:00.000Z",
+    "_doc_count": 1,
+    "agent": {
+      "name": "rum-js"
+    },
+    "data_stream": {
+      "dataset": "apm.transaction.1m",
+      "namespace": "default",
+      "type": "metrics"
+    },
+    "event": {
+      "outcome": "failure",
+      "success_count": {
+        "sum": 0,
+        "value_count": 1
+      }
+    },
+    "metricset": {
+      "interval": "1m",
+      "name": "transaction"
+    },
+    "observer": {
+      "hostname": "3593523ce374",
+      "type": "apm-server",
+      "version": "9.1.0"
+    },
+    "service": {
+      "environment": "https://www.elastic.co",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "elastic-co-frontend",
+      "version": "1.0.0"
+    },
+    "transaction": {
+      "duration": {
+        "histogram": {
+          "values": [
+            448511
+          ],
+          "counts": [
+            1
+          ]
+        },
+        "summary": {
+          "sum": 448511,
+          "value_count": 1
+        }
+      },
+      "name": "POST https://region1.analytics.google.com/g/collect",
+      "root": true,
+      "type": "http-request"
+    }
+  },
+  "fields": {
+    "transaction.name.text": [
+      "POST https://region1.analytics.google.com/g/collect"
+    ],
+    "transaction.duration.summary": [
+      {
+        "sum": 448511,
+        "value_count": 1
+      }
+    ],
+    "service.language.name": [
+      "javascript"
+    ],
+    "agent.name.text": [
+      "rum-js"
+    ],
+    "event.success_count": [
+      {
+        "sum": 0,
+        "value_count": 1
+      }
+    ],
+    "transaction.root": [
+      true
+    ],
+    "processor.event": [
+      "metric"
+    ],
+    "agent.name": [
+      "rum-js"
+    ],
+    "event.outcome": [
+      "failure"
+    ],
+    "service.environment": [
+      "https://www.elastic.co"
+    ],
+    "_doc_count": [
+      1
+    ],
+    "service.name": [
+      "elastic-co-frontend"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "service.language.name.text": [
+      "javascript"
+    ],
+    "metricset.interval": [
+      "1m"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "observer.hostname": [
+      "3593523ce374"
+    ],
+    "transaction.duration.histogram": [
+      {
+        "values": [
+          448511
+        ],
+        "counts": [
+          1
+        ]
+      }
+    ],
+    "transaction.type": [
+      "http-request"
+    ],
+    "metricset.name": [
+      "transaction"
+    ],
+    "@timestamp": [
+      "2025-04-12T19:16:00.000Z"
+    ],
+    "service.version": [
+      "1.0.0"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "observer.version": [
+      "9.1.0"
+    ],
+    "service.name.text": [
+      "elastic-co-frontend"
+    ],
+    "data_stream.dataset": [
+      "apm.transaction.1m"
+    ],
+    "transaction.name": [
+      "POST https://region1.analytics.google.com/g/collect"
+    ]
+  }
+}

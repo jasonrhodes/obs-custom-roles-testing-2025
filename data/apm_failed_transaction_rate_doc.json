@@ -1,0 +1,39 @@
+{
+  "event": {
+    "outcome": "failure",
+    "success_count": {
+      "sum": 0,
+      "value_count": 2
+    }
+  },
+  "metricset": {
+    "interval": "1m",
+    "name": "transaction"
+  },
+  "service": {
+    "environment": "opbeans",
+    "name": "opbeans-node"
+  },
+  "transaction": {
+    "duration": {
+      "histogram": {
+        "values": [
+          49919,
+          51711
+        ],
+        "counts": [
+          1,
+          1
+        ]
+      },
+      "summary": {
+        "sum": 101630,
+        "value_count": 2
+      }
+    },
+    "name": "GET /api/types",
+    "result": "HTTP 5xx",
+    "root": true,
+    "type": "request"
+  }
+}
