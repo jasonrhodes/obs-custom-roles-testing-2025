@@ -7,6 +7,7 @@ export async function ingestDocuments() {
     logs: 'logs-custom_roles_testing-default',
     metrics: 'metrics-custom_roles_testing-default',
     apmRollupMetrics: 'metrics-apm.transaction.1m-default',
+    apmLogs: "logs-apm.test-default"
   }});
 
   try {

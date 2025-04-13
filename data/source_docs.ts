@@ -12,6 +12,7 @@ interface GetSourceDocsArgs {
     logs: string;
     metrics: string;
     apmRollupMetrics: string;
+    apmLogs: string;
   }
 }
 
@@ -66,7 +67,7 @@ export function getAPMBulk({ ts, dataStreams }: GetSourceDocsArgs) {
     apmLatencyDoc,
     { create: { "_index": dataStreams.apmRollupMetrics }},
     apmFailedTransactionRateDoc,
-    { create: { "_index": "logs-apm.test-default" }},
+    { create: { "_index": dataStreams.apmLogs }},
     {
       "@timestamp": timestampString,
       "message": "APM error log message",
