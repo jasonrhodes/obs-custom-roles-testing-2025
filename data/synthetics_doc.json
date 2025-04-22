@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "retry_group": "1b19fa6a-1f96-11f0-9a44-0242ac110003",
+    "max_attempts": 2,
+    "up": 0,
+    "attempt": 1,
+    "final_attempt": false,
+    "down": 1,
+    "status": "down"
+  },
+  "tcp": {
+    "rtt": {
+      "connect": {
+        "us": 5524
+      }
+    }
+  },
+  "agent": {
+    "name": "dc3e845618dc",
+    "id": "bf0d0c16-eda4-44b0-b891-118e23b25e71",
+    "type": "heartbeat",
+    "ephemeral_id": "47230e5e-75c3-4e63-84a4-d2efa0b7271d",
+    "version": "9.1.0"
+  },
+  "resolve": {
+    "rtt": {
+      "us": 115230
+    },
+    "ip": "3.33.251.168"
+  },
+  "monitor": {
+    "duration": {
+      "us": 3189588
+    },
+    "origin": "ui",
+    "ip": "3.33.251.168",
+    "name": "https://elastic.com",
+    "timespan": {
+      "lt": "2025-04-22T16:24:24.063Z",
+      "gte": "2025-04-22T16:23:24.063Z"
+    },
+    "fleet_managed": true,
+    "id": "cf8e0814-8cc5-4dac-b337-64251f3861e2",
+    "check_group": "1b19fa6a-1f96-11f0-9a44-0242ac110003-1",
+    "type": "http",
+    "status": "down"
+  },
+  "error": {
+    "code": "BAD_HTTP_STATUS",
+    "stack_trace": null,
+    "type": "io",
+    "message": "Bad HTTP status Not Found encountered"
+  },
+  "url": {
+    "scheme": "https",
+    "port": 443,
+    "domain": "elastic.com",
+    "full": "https://elastic.com"
+  },
+  "observer": {
+    "geo": {
+      "name": "Default location 6f18bdd1-c767-4c07-947d-2f726cf170f1"
+    },
+    "name": "bef3fa69-e5bf-4ed5-84fe-ba17372ff5eb"
+  },
+  "@timestamp": "2025-04-22T16:23:24.071Z",
+  "ecs": {
+    "version": "8.0.0"
+  },
+  "config_id": "cf8e0814-8cc5-4dac-b337-64251f3861e2",
+  "data_stream": {
+    "namespace": "default",
+    "type": "synthetics",
+    "dataset": "http"
+  },
+  "meta": {
+    "space_id": "default"
+  },
+  "http": {
+    "rtt": {
+      "response_header": {
+        "us": 14631
+      },
+      "total": {
+        "us": 3074102
+      },
+      "write_request": {
+        "us": 93
+      },
+      "content": {
+        "us": 609
+      },
+      "validate": {
+        "us": 15241
+      }
+    },
+    "response": {
+      "headers": {
+        "Server": "ip-10-123-125-29.ec2.internal",
+        "X-Request-Id": "b81c42c8-30f0-4499-8917-776319e88690",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "143",
+        "Date": "Tue, 22 Apr 2025 16:23:24 GMT",
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "status_code": 404,
+      "mime_type": "text/html; charset=utf-8",
+      "body": {
+        "bytes": 143,
+        "content": "",
+        "hash": "3a544106eb185ab7aed03b7da8745541506521877bd1599266f837c86bcd25d3"
+      }
+    }
+  },
+  "tls": {
+    "certificate_not_valid_before": "2024-05-03T12:36:18.000Z",
+    "established": true,
+    "cipher": "TLS-AES-128-GCM-SHA256",
+    "server": {
+      "x509": {
+        "not_after": "2025-05-03T12:36:18.000Z",
+        "public_key_exponent": 65537,
+        "subject": {
+          "distinguished_name": "CN=elastic.com",
+          "common_name": "elastic.com"
+        },
+        "not_before": "2024-05-03T12:36:18.000Z",
+        "public_key_algorithm": "RSA",
+        "signature_algorithm": "SHA256-RSA",
+        "serial_number": "1553157630122838486",
+        "public_key_size": 2048,
+        "issuer": {
+          "distinguished_name": "",
+          "common_name": "Go Daddy Secure Certificate Authority - G2"
+        }
+      },
+      "hash": {
+        "sha1": "7b49fedd2738c85d32419a075f46449e1ed8690b",
+        "sha256": "781bfb37a4ecc6055ad4c60b5019b5820882f4f9bbce941602374a4fb9ae30e0"
+      }
+    },
+    "rtt": {
+      "handshake": {
+        "us": 3053081
+      }
+    },
+    "certificate_not_valid_after": "2025-05-03T12:36:18.000Z",
+    "version": "1.3",
+    "version_protocol": "tls"
+  },
+  "state": {
+    "duration_ms": "0",
+    "checks": 1,
+    "ends": null,
+    "started_at": "2025-04-22T16:23:24.071501251Z",
+    "up": 0,
+    "id": "bef3fa69-e5bf-4ed5-84fe-ba17372ff5eb-1965e4fb4a7-0",
+    "down": 1,
+    "flap_history": [],
+    "status": "down"
+  },
+  "event": {
+    "agent_id_status": "mismatch",
+    "ingested": "2025-04-22T16:23:34Z",
+    "type": "heartbeat/summary",
+    "dataset": "http"
+  }
+}
